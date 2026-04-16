@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Medicine Reminder</title>
+  <meta name="description" content="Medicine Reminder collects nothing, stores everything on your device only, and sends nothing anywhere." />
+  <style>
+    :root {
+      --primary: #3B6EFF;
+      --primary-dark: #1F3A8A;
+      --teal: #00D4AA;
+      --bg: #FAFBFF;
+      --surface: #FFFFFF;
+      --surface-variant: #F1F4FA;
+      --text: #1A1C1E;
+      --text-soft: #5B6577;
+      --border: #D7DEEA;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--surface);
+      padding: 48px 24px 36px;
+    }
+    header .wrap { max-width: 760px; margin: 0 auto; }
+    header h1 { margin: 0 0 8px; font-size: 32px; font-weight: 700; letter-spacing: -0.4px; }
+    header .meta { opacity: 0.85; font-size: 14px; }
+    main {
+      max-width: 760px;
+      margin: -24px auto 64px;
+      padding: 0 24px;
+    }
+    .summary {
+      background: var(--surface);
+      border-left: 4px solid var(--teal);
+      padding: 20px 24px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(31, 58, 138, 0.08);
+      margin-bottom: 32px;
+      font-size: 17px;
+    }
+    .summary strong { color: var(--primary-dark); }
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: var(--primary-dark);
+    }
+    p, ul, ol { font-size: 16px; color: var(--text); }
+    ul, ol { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 15px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { background: var(--surface-variant); color: var(--primary-dark); font-weight: 600; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: var(--surface-variant); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    footer {
+      max-width: 760px;
+      margin: 32px auto 48px;
+      padding: 0 24px;
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <strong>Medicine Reminder</strong> &middot; Effective 2026-04-16
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <strong>Medicine Reminder collects nothing.</strong> Stores everything on your
+      device only. Sends nothing anywhere. We don&rsquo;t have your medicines,
+      dosages, schedules, or intake history &mdash; only your phone does. Uninstall
+      the app and every trace of your data is gone.
+    </div>
+
+    <h2>1. What we collect</h2>
+    <p><strong>Nothing.</strong> Medicine Reminder does not collect any personal data,
+    usage analytics, crash reports, advertising identifiers, or any other
+    information from you or your device.</p>
+
+    <h2>2. What is stored on your device</h2>
+    <p>The app stores the following data <strong>locally on your phone only</strong>,
+    in app-private storage that no other app can read:</p>
+    <ul>
+      <li>Medicine entries you create (name, dosage, optional notes, schedule times)</li>
+      <li>Intake records (Taken / Snoozed / Skipped / Missed) and their timestamps</li>
+      <li>Your preferences (snooze duration, grace period)</li>
+      <li>App state (e.g. whether you&rsquo;ve completed onboarding)</li>
+    </ul>
+    <p>This data never leaves your device. We have no servers and no way to access it.</p>
+
+    <h2>3. Third-party services</h2>
+    <p><strong>None.</strong> Medicine Reminder does not include analytics SDKs,
+    crash-reporting SDKs, advertising SDKs, cloud-storage or backend services,
+    social-login providers, or any third-party SDK that sends data off the device.</p>
+
+    <h2>4. Network access</h2>
+    <p>The app does <strong>not request the <code>INTERNET</code> permission</strong>.
+    It is technically incapable of sending any data off your device.</p>
+
+    <h2>5. Permissions used and why</h2>
+    <table>
+      <thead><tr><th>Permission</th><th>Why the app asks for it</th></tr></thead>
+      <tbody>
+        <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td>
+            <td>To display reminder notifications when a dose is due.</td></tr>
+        <tr><td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code> (Android 12+)</td>
+            <td>To fire reminders at the exact minute you scheduled them.</td></tr>
+        <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>To re-arm pending reminders after you restart your phone.</td></tr>
+        <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> (optional)</td>
+            <td>To prevent Android from silencing reminders during Doze.</td></tr>
+      </tbody>
+    </table>
+    <p>The app does <strong>not</strong> request location, contacts, camera,
+    microphone, storage, calendar, network, or any other permission beyond those
+    above.</p>
+
+    <h2>6. Children&rsquo;s privacy</h2>
+    <p>Medicine Reminder is intended for users aged 13 and older. We do not
+    knowingly collect personal information from anyone &mdash; including children
+    &mdash; because we collect no information at all.</p>
+
+    <h2>7. Data retention and deletion</h2>
+    <p>Because all data lives only on your device:</p>
+    <ul>
+      <li><strong>Retention</strong> is entirely under your control. Data persists
+        until you delete it (medicine-by-medicine in the app, or all at once by
+        clearing the app&rsquo;s data in Android Settings).</li>
+      <li><strong>Deletion</strong>: uninstalling the app removes all data immediately.
+        There is no off-device copy of anything to request deletion of, because
+        there is no off-device copy.</li>
+    </ul>
+
+    <h2>8. Your privacy rights (GDPR, CCPA, and similar laws)</h2>
+    <p>Because Medicine Reminder collects and processes no personal data on our
+    side, GDPR/CCPA data-subject rights do not result in any action we need to
+    take on your behalf:</p>
+    <ul>
+      <li><strong>Right to access</strong>: there is no data on our side to disclose.</li>
+      <li><strong>Right to rectify</strong>: edit your entries directly in the app.</li>
+      <li><strong>Right to delete</strong>: uninstall the app, or clear app data in
+        Android Settings.</li>
+      <li><strong>Right to portability</strong>: not applicable; we hold no data.</li>
+      <li><strong>Right to object / restrict processing</strong>: not applicable; we
+        do no processing.</li>
+    </ul>
+    <p>If a future version introduces optional cloud features, those will be
+    <strong>opt-in only</strong>, and this policy will be updated to describe what
+    data those features handle, before any data is collected.</p>
+
+    <h2>9. Security</h2>
+    <p>Even though no data leaves your device, we still take care of what&rsquo;s
+    on it. The app uses Android&rsquo;s app-private storage; data is not readable
+    by other apps without root access. Future cloud features (when introduced as
+    opt-in) will use TLS in transit and at-rest encryption.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If anything material changes &mdash; for example, if a future version
+    introduces network features &mdash; we will post an updated policy at the same
+    URL with a new effective date, and surface a notice inside the app before any
+    new data collection begins.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions about this policy or the app&rsquo;s privacy practices:</p>
+    <p><strong>Email:</strong>
+       <a href="mailto:shafqat.ahmed.gplay@gmail.com">shafqat.ahmed.gplay@gmail.com</a>
+    </p>
+    <p>We aim to respond within 7 business days.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rajib Hasan &middot;
+       <a href="terms-of-use.html">Terms of Use &amp; Medical Disclaimer</a>
+    </p>
+  </footer>
+</body>
+</html>
