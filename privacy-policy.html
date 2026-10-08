@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Medicine Reminder</title>
-  <meta name="description" content="Medicine Reminder collects nothing, stores everything on your device only, and sends nothing anywhere." />
+  <meta name="description" content="How Medicine Reminder handles your data: health data stays on your device; ads, purchases and a few online features are explained here." />
   <style>
     :root {
       --primary: #3B6EFF;
@@ -89,111 +89,158 @@
     <div class="wrap">
       <h1>Privacy Policy</h1>
       <div class="meta">
-        <strong>Medicine Reminder</strong> &middot; Effective 2026-04-16
+        <strong>Medicine Reminder</strong> &middot; Effective 2026-10-08
       </div>
     </div>
   </header>
 
   <main>
     <div class="summary">
-      <strong>Medicine Reminder collects nothing.</strong> Stores everything on your
-      device only. Sends nothing anywhere. We don&rsquo;t have your medicines,
-      dosages, schedules, or intake history &mdash; only your phone does. Uninstall
-      the app and every trace of your data is gone.
+      <strong>Your health data stays on your phone.</strong> Your medicines, schedules,
+      dose history and health readings are stored only on your device. We have no
+      account system and no server copy of them. The free version shows ads from
+      Google AdMob, and a few features use the internet as described below.
     </div>
 
-    <h2>1. What we collect</h2>
-    <p><strong>Nothing.</strong> Medicine Reminder does not collect any personal data,
-    usage analytics, crash reports, advertising identifiers, or any other
-    information from you or your device.</p>
-
-    <h2>2. What is stored on your device</h2>
-    <p>The app stores the following data <strong>locally on your phone only</strong>,
-    in app-private storage that no other app can read:</p>
+    <h2>1. What stays on your device</h2>
+    <p>The app stores the following <strong>only on your phone</strong>, in
+    app-private storage that other apps cannot read. It is not backed up to the cloud:</p>
     <ul>
-      <li>Medicine entries you create (name, dosage, optional notes, schedule times)</li>
-      <li>Intake records (Taken / Snoozed / Skipped / Missed) and their timestamps</li>
-      <li>Your preferences (snooze duration, grace period)</li>
-      <li>App state (e.g. whether you&rsquo;ve completed onboarding)</li>
+      <li>Medicines you add (name, strength, type, notes, optional photo link, schedule)</li>
+      <li>Dose history (Taken / Snoozed / Skipped / Missed) and streaks</li>
+      <li>Profiles you create (a name and an emoji)</li>
+      <li>Health readings, pill stock, routines and settings you enter</li>
+      <li>Adherence reports (PDF) you create &mdash; shared only if you tap Share</li>
+      <li>Caregiver contacts you enter (email or phone and an optional name)</li>
+      <li>The downloaded medicine list for your country</li>
     </ul>
-    <p>This data never leaves your device. We have no servers and no way to access it.</p>
+    <p>Medicine photos are chosen with Android&rsquo;s photo picker; the app keeps only
+    a link to the photo and never uploads it.</p>
+
+    <h2>2. What leaves your device, and why</h2>
+    <table>
+      <thead><tr><th>Feature</th><th>What is sent</th><th>Sent to</th></tr></thead>
+      <tbody>
+        <tr><td>Ads (free version only)</td>
+            <td>Advertising ID, device and app information, approximate location
+            from your IP address, ad interactions</td>
+            <td>Google AdMob</td></tr>
+        <tr><td>Premium purchase</td>
+            <td>Your purchase is handled entirely by Google Play. We receive a purchase
+            confirmation, never your payment details.</td>
+            <td>Google Play Billing</td></tr>
+        <tr><td>Medicine list for your country</td>
+            <td>A request for the public medicine list of your selected country. No
+            personal or health data is sent.</td>
+            <td>Google Firebase Storage</td></tr>
+        <tr><td>Drug-interaction check and barcode lookup</td>
+            <td>Names of your medicines (when you have two or more), or a scanned
+            barcode number. No name, account or device identifier is attached.</td>
+            <td>openFDA (U.S. Food and Drug Administration public database)</td></tr>
+        <tr><td>Notifications from the app</td>
+            <td>A push-notification token that identifies the app install (not you)</td>
+            <td>Google Firebase Cloud Messaging and Firestore</td></tr>
+        <tr><td>Caregiver alerts (only if you connect a caregiver)</td>
+            <td>The name of a medicine whose dose was missed, sent to your
+            connected caregiver</td>
+            <td>Google Firebase Firestore and Cloud Messaging</td></tr>
+        <tr><td>Wear OS watch (only if you use one)</td>
+            <td>Dose reminders and your Taken / Snooze / Skip taps, between your own
+            phone and watch</td>
+            <td>Your watch, via Google Play services</td></tr>
+      </tbody>
+    </table>
+    <p>We do not use analytics or crash-reporting services, and we never sell your data.
+    Your country is detected on the device (from your SIM, mobile network or phone
+    region) only to choose which medicine list to download; the app does not use
+    location permission or GPS. You can turn the medicine list off in
+    <strong>Settings &rarr; Medicine list country</strong>.</p>
 
     <h2>3. Third-party services</h2>
-    <p><strong>None.</strong> Medicine Reminder does not include analytics SDKs,
-    crash-reporting SDKs, advertising SDKs, cloud-storage or backend services,
-    social-login providers, or any third-party SDK that sends data off the device.</p>
+    <p>These services process data under their own privacy policies:</p>
+    <ul>
+      <li>Google AdMob and Google Play services &mdash;
+        <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+        (how Google uses data from apps:
+        <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>)</li>
+      <li>Google Firebase &mdash;
+        <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+      <li>openFDA &mdash;
+        <a href="https://open.fda.gov/terms/">open.fda.gov/terms</a></li>
+    </ul>
 
-    <h2>4. Network access</h2>
-    <p>The app does <strong>not request the <code>INTERNET</code> permission</strong>.
-    It is technically incapable of sending any data off your device.</p>
+    <h2>4. Advertising</h2>
+    <p>The free version shows a banner ad on the main screens. Ads are limited to
+    content suitable for teens and older. Google may use your device&rsquo;s advertising
+    ID to show personalised ads. You can reset or delete your advertising ID, or opt out
+    of personalised ads, in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong>
+    (or <strong>Google &rarr; Ads</strong>). Buying Premium removes all ads.</p>
 
     <h2>5. Permissions used and why</h2>
     <table>
       <thead><tr><th>Permission</th><th>Why the app asks for it</th></tr></thead>
       <tbody>
         <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td>
-            <td>To display reminder notifications when a dose is due.</td></tr>
-        <tr><td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code> (Android 12+)</td>
+            <td>To show reminder notifications when a dose is due.</td></tr>
+        <tr><td><code>USE_EXACT_ALARM</code></td>
             <td>To fire reminders at the exact minute you scheduled them.</td></tr>
+        <tr><td><code>USE_FULL_SCREEN_INTENT</code></td>
+            <td>To show a full-screen reminder for a due dose, like an alarm clock.</td></tr>
         <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td>
-            <td>To re-arm pending reminders after you restart your phone.</td></tr>
+            <td>To set your reminders again after you restart your phone.</td></tr>
         <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code> (optional)</td>
-            <td>To prevent Android from silencing reminders during Doze.</td></tr>
+            <td>To stop Android from silencing reminders to save battery.</td></tr>
+        <tr><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td>
+            <td>To finish background work such as setting reminders and updating
+            the medicine list.</td></tr>
+        <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+            <td>For the features in section 2, and to wait for a connection before
+            downloading the medicine list.</td></tr>
+        <tr><td><code>AD_ID</code> and Android ad-services permissions</td>
+            <td>Used by Google AdMob to show ads in the free version.</td></tr>
+        <tr><td><code>BILLING</code></td>
+            <td>To buy Premium through Google Play.</td></tr>
+        <tr><td>Push-message receive</td>
+            <td>To receive notifications through Firebase Cloud Messaging.</td></tr>
       </tbody>
     </table>
-    <p>The app does <strong>not</strong> request location, contacts, camera,
-    microphone, storage, calendar, network, or any other permission beyond those
-    above.</p>
+    <p>The app does <strong>not</strong> request location, contacts, microphone,
+    phone, SMS, calendar or storage permissions.</p>
 
     <h2>6. Children&rsquo;s privacy</h2>
-    <p>Medicine Reminder is intended for users aged 13 and older. We do not
-    knowingly collect personal information from anyone &mdash; including children
-    &mdash; because we collect no information at all.</p>
+    <p>Medicine Reminder is intended for users aged 13 and older and is not directed at
+    children. You may add family members, including children, as profiles; their
+    information stays on your device like everything else in section 1.</p>
 
     <h2>7. Data retention and deletion</h2>
-    <p>Because all data lives only on your device:</p>
     <ul>
-      <li><strong>Retention</strong> is entirely under your control. Data persists
-        until you delete it (medicine-by-medicine in the app, or all at once by
-        clearing the app&rsquo;s data in Android Settings).</li>
-      <li><strong>Deletion</strong>: uninstalling the app removes all data immediately.
-        There is no off-device copy of anything to request deletion of, because
-        there is no off-device copy.</li>
+      <li><strong>On your device:</strong> data stays until you delete it in the app, clear
+        the app&rsquo;s data in Android Settings, or uninstall the app. Uninstalling removes
+        it immediately.</li>
+      <li><strong>Push token and caregiver alerts:</strong> stored in our Firebase project
+        only to deliver notifications. To have them deleted, email us (section 11).</li>
+      <li><strong>Ads, Google Play and openFDA:</strong> kept according to those
+        providers&rsquo; policies (section 3).</li>
     </ul>
 
-    <h2>8. Your privacy rights (GDPR, CCPA, and similar laws)</h2>
-    <p>Because Medicine Reminder collects and processes no personal data on our
-    side, GDPR/CCPA data-subject rights do not result in any action we need to
-    take on your behalf:</p>
-    <ul>
-      <li><strong>Right to access</strong>: there is no data on our side to disclose.</li>
-      <li><strong>Right to rectify</strong>: edit your entries directly in the app.</li>
-      <li><strong>Right to delete</strong>: uninstall the app, or clear app data in
-        Android Settings.</li>
-      <li><strong>Right to portability</strong>: not applicable; we hold no data.</li>
-      <li><strong>Right to object / restrict processing</strong>: not applicable; we
-        do no processing.</li>
-    </ul>
-    <p>If a future version introduces optional cloud features, those will be
-    <strong>opt-in only</strong>, and this policy will be updated to describe what
-    data those features handle, before any data is collected.</p>
+    <h2>8. Your privacy rights (GDPR, CCPA and similar laws)</h2>
+    <p>You can ask us to access or delete the little data we hold on our side (your push
+    token and any caregiver alerts) by emailing us. Everything else you can view, edit
+    or delete yourself in the app. You can control ad personalisation in your Android
+    settings (section 4). We do not sell or share personal information for money.</p>
 
     <h2>9. Security</h2>
-    <p>Even though no data leaves your device, we still take care of what&rsquo;s
-    on it. The app uses Android&rsquo;s app-private storage; data is not readable
-    by other apps without root access. Future cloud features (when introduced as
-    opt-in) will use TLS in transit and at-rest encryption.</p>
+    <p>Data on your phone is kept in Android&rsquo;s app-private storage, which other apps
+    cannot read without root access. All network connections use encryption (HTTPS/TLS).</p>
 
     <h2>10. Changes to this policy</h2>
-    <p>If anything material changes &mdash; for example, if a future version
-    introduces network features &mdash; we will post an updated policy at the same
-    URL with a new effective date, and surface a notice inside the app before any
-    new data collection begins.</p>
+    <p>If we change how the app handles data, we will post the updated policy at this
+    address with a new effective date before the change takes effect.</p>
 
     <h2>11. Contact</h2>
     <p>Questions about this policy or the app&rsquo;s privacy practices:</p>
     <p><strong>Email:</strong>
-       <a href="mailto:shafqat.ahmed.gplay@gmail.com">shafqat.ahmed.gplay@gmail.com</a>
+       <a href="mailto:rajibhasan.dev@gmail.com">rajibhasan.dev@gmail.com</a>
     </p>
     <p>We aim to respond within 7 business days.</p>
   </main>
